@@ -9,8 +9,8 @@
 
 source password.txt
 
-mkdir -p support
-echo "Con una evaluación cuidadosa, uno puede vencer; sin ella, no puede" > support/motd.txt
+mkdir -p "$HOME"/support-openra-srv
+echo "Con una evaluación cuidadosa, uno puede vencer; sin ella, no puede" > "$HOME"/support-openra-srv/motd.txt
 
 # mkdir -p "$HOME"/.openra
 # echo "Con una evaluación cuidadosa, uno puede vencer; sin ella, no puede" > "$HOME"/.openra/motd.txt
@@ -25,9 +25,9 @@ DiscoverNatDevices="${DiscoverNatDevices:-"False"}" # Allow users to enable NAT 
 NatDiscoveryTimeout="${NatDiscoveryTimeout:-"1000"}" # Time in milliseconds to search for UPnP enabled NAT devices. (default: 1000)
 
 #Starts the game with a default map. Input as hash that can be obtained by the utility.
-#Map="${Map:-"bc7abe606b21f03ad65a6c331c2ca9167e62ebbd"}" # Countercross
+Map="${Map:-"bc7abe606b21f03ad65a6c331c2ca9167e62ebbd"}" # Countercross
 #Map="${Map:-"6b57276597014833fc40299909be39a0d3f2ec17"}" # Ore Gardens
-Map="${Map:-"a59680f086b9431dabaf6a0d5b429390dc40af16"}" # World War II: Europe (High Frame Rate Version)
+#Map="${Map:-"a59680f086b9431dabaf6a0d5b429390dc40af16"}" # World War II: Europe (High Frame Rate Version)
 
 Ban="${Ban:-""}" # Takes a comma separated list of IP addresses that are not allowed to join.
 RequireAuthentication="${RequireAuthentication:-"False"}" # For dedicated servers only, allow anonymous clients to join. (default: False)
@@ -42,7 +42,7 @@ TimestampFormat="${TimestampFormat:-"yyyy-MM-ddTHH:mm:ss"}" # Sets the timestamp
 EnableGeoIP="${EnableGeoIP:-"True"}"
 ShareAnonymizedIPs="${ShareAnonymizedIPs:-"True"}"
 
-SupportDir="${SupportDir:-"$PWD/support"}" # Different directory to store server logs, maps, etc.
+SupportDir="${SupportDir:-"$HOME/support-openra-srv"}" # Different directory to store server logs, maps, etc.
 
 while true; do
 #    mono --debug ./OpenRA-Red-Alert-x86_64.AppImage --server Game.Mod="$Mod" \
