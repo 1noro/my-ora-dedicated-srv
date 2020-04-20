@@ -1,1 +1,1 @@
-nohup ./run-openra-server.sh &
+nohup ./run-openra-srv.sh &
