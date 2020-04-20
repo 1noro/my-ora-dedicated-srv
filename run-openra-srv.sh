@@ -23,8 +23,11 @@ AdvertiseOnline="${AdvertiseOnline:-"True"}" # Reports the game to the master se
 Password="${Password:-"$PASSWORD"}" # Locks the game with a password.
 DiscoverNatDevices="${DiscoverNatDevices:-"False"}" # Allow users to enable NAT discovery for external IP detection and automatic port forwarding. (default: False)
 NatDiscoveryTimeout="${NatDiscoveryTimeout:-"1000"}" # Time in milliseconds to search for UPnP enabled NAT devices. (default: 1000)
-Map="${Map:-"bc7abe606b21f03ad65a6c331c2ca9167e62ebbd"}" # Countercross, Starts the game with a default map. Input as hash that can be obtained by the utility.
-#Map="${Map:-"6b57276597014833fc40299909be39a0d3f2ec17"}" # Ore Gardens, Starts the game with a default map. Input as hash that can be obtained by the utility.
+
+#Starts the game with a default map. Input as hash that can be obtained by the utility.
+#Map="${Map:-"bc7abe606b21f03ad65a6c331c2ca9167e62ebbd"}" # Countercross
+#Map="${Map:-"6b57276597014833fc40299909be39a0d3f2ec17"}" # Ore Gardens
+Map="${Map:-"a59680f086b9431dabaf6a0d5b429390dc40af16"}" # World War II: Europe (High Frame Rate Version)
 
 Ban="${Ban:-""}" # Takes a comma separated list of IP addresses that are not allowed to join.
 RequireAuthentication="${RequireAuthentication:-"False"}" # For dedicated servers only, allow anonymous clients to join. (default: False)
