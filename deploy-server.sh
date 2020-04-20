@@ -35,7 +35,7 @@ if [ -f "password.txt" ]; then
 else
     echo ">> Write a password for the server (leave blank to have no password):"
     read NEW_PASSWORD
-    echo "$NEW_PASSWORD" > "$DEPLOY_DIR_PATH"/password.txt
+    echo 'PASSWORD="'$NEW_PASSWORD'"' > "$DEPLOY_DIR_PATH"/password.txt
 fi
 
 echo ">> Deleting $APPIMAGE_NAME"
