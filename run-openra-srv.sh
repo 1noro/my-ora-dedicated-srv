@@ -33,11 +33,12 @@ TimestampFormat="${TimestampFormat:-"yyyy-MM-ddTHH:mm:ss"}" # Sets the timestamp
 EnableGeoIP="${EnableGeoIP:-"True"}"
 ShareAnonymizedIPs="${ShareAnonymizedIPs:-"True"}"
 
-mkdir -p "$PWD"/dedicated-log
-SupportDir="${SupportDir:-"$PWD/dedicated-log"}" # Different directory to store server logs.
+mkdir -p support
+SupportDir="${SupportDir:-"$PWD/support"}" # Different directory to store server logs, maps, etc.
+echo "Con una evaluación cuidadosa, uno puede vencer; sin ella, no puede" > support/motd.txt
 
-mkdir -p "$HOME"/.openra
-echo "Con una evaluación cuidadosa, uno puede vencer; sin ella, no puede" > "$HOME"/.openra/motd.txt
+# mkdir -p "$HOME"/.openra
+# echo "Con una evaluación cuidadosa, uno puede vencer; sin ella, no puede" > "$HOME"/.openra/motd.txt
 
 while true; do
 #    mono --debug ./OpenRA-Red-Alert-x86_64.AppImage --server Game.Mod="$Mod" \
