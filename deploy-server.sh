@@ -7,7 +7,12 @@ DEPLOY_DIR_NAME="openra-srv"
 DEPLOY_DIR_PATH="~/$DEPLOY_DIR_NAME"
 
 echo ">> Cleaning the installation stage..."
-rm -r -I "$DEPLOY_DIR_PATH"
+if [ -d "$DEPLOY_DIR_PATH" ]; then
+    echo ">> Are you sure you want to delete the previous installation?"
+    rm -r -I "$DEPLOY_DIR_PATH"
+fi
+
+mkdir -p "$DEPLOY_DIR_PATH"
 
 echo ">> Downloading $APPIMAGE_NAME (release-$RELEASE)"
 wget wget -q --show-progress -O "$APPIMAGE_NAME" "$URL"
