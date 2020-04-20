@@ -1,5 +1,5 @@
-#!/bin/sh
-# example launch script based in: https://github.com/OpenRA/OpenRA/wiki/Dedicated for details
+#!/bin/bash
+# https://github.com/boot1110001/my-ora-dedicated-srv/blob/master/run-openra-srv.sh
 # example launch script based in: https://github.com/OpenRA/OpenRA/wiki/Dedicated for details
 
 # Usage:
