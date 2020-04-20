@@ -1,1 +1,1 @@
-nohup ./run-openra-srv.sh &
+nohup ./run-openra-srv.sh > run-openra-srv.log &

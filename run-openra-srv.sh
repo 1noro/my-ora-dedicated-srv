@@ -33,7 +33,8 @@ TimestampFormat="${TimestampFormat:-"yyyy-MM-ddTHH:mm:ss"}" # Sets the timestamp
 EnableGeoIP="${EnableGeoIP:-"True"}"
 ShareAnonymizedIPs="${ShareAnonymizedIPs:-"True"}"
 
-#SupportDir="${SupportDir:-""}" # Different directory to store server logs.
+mkdir -p dedicated-log
+SupportDir="${SupportDir:-"dedicated-log"}" # Different directory to store server logs.
 
 mkdir -p "$HOME"/.openra
 echo "Con una evaluación cuidadosa, uno puede vencer; sin ella, no puede" > "$HOME"/.openra/motd.txt
