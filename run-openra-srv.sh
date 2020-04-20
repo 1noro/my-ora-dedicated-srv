@@ -33,7 +33,7 @@ TimestampFormat="${TimestampFormat:-"yyyy-MM-ddTHH:mm:ss"}" # Sets the timestamp
 EnableGeoIP="${EnableGeoIP:-"True"}"
 ShareAnonymizedIPs="${ShareAnonymizedIPs:-"True"}"
 
-mkdir -p ./edicated-log
+mkdir -p ./dedicated-log
 SupportDir="${SupportDir:-"./dedicated-log"}" # Different directory to store server logs.
 
 mkdir -p "$HOME"/.openra
