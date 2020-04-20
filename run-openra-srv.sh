@@ -33,32 +33,32 @@ TimestampFormat="${TimestampFormat:-"yyyy-MM-ddTHH:mm:ss"}" # Sets the timestamp
 EnableGeoIP="${EnableGeoIP:-"True"}"
 ShareAnonymizedIPs="${ShareAnonymizedIPs:-"True"}"
 
-mkdir -p ./dedicated-log
-SupportDir="${SupportDir:-"./dedicated-log"}" # Different directory to store server logs.
+mkdir -p dedicated-log
+SupportDir="${SupportDir:-"dedicated-log"}" # Different directory to store server logs.
 
 mkdir -p "$HOME"/.openra
 echo "Con una evaluación cuidadosa, uno puede vencer; sin ella, no puede" > "$HOME"/.openra/motd.txt
 
 while true; do
-#     mono --debug ./OpenRA-Red-Alert-x86_64.AppImage --server Game.Mod="$Mod" \
-#     ./OpenRA-Red-Alert-x86_64.AppImage --server Game.Mod="$Mod" \
-     ./AppRun --server Game.Mod="$Mod" \
-     Server.Name="$Name" \
-     Server.ListenPort="$ListenPort" \
-     Server.AdvertiseOnline="$AdvertiseOnline" \
-     Server.Password="$Password" \
-     Server.DiscoverNatDevices="$DiscoverNatDevices" \
-     Server.Map="$Map" \
-     Server.Ban="$Ban" \
-     Server.RequireAuthentication="$RequireAuthentication" \
-     Server.ProfileIDBlacklist="$ProfileIDBlacklist" \
-     Server.ProfileIDWhitelist="$ProfileIDWhitelist" \
-     Server.EnableSingleplayer="$EnableSingleplayer" \
-     Server.QueryMapRepository="$QueryMapRepository" \
-     Server.EnableSyncReports="$EnableSyncReports" \
-     Server.TimestampFormat="$TimestampFormat" \
-     Server.EnableGeoIP="$EnableGeoIP" \
-     Server.ShareAnonymizedIPs="$ShareAnonymizedIPs" # \
-#     Server.GeoIPDatabase="$GeoIPDatabase" \
-#     Engine.SupportDir="$SupportDir"
+#    mono --debug ./OpenRA-Red-Alert-x86_64.AppImage --server Game.Mod="$Mod" \
+#    ./OpenRA-Red-Alert-x86_64.AppImage --server Game.Mod="$Mod" \
+    ./AppRun --server Game.Mod="$Mod" \
+    Server.Name="$Name" \
+    Server.ListenPort="$ListenPort" \
+    Server.AdvertiseOnline="$AdvertiseOnline" \
+    Server.Password="$Password" \
+    Server.DiscoverNatDevices="$DiscoverNatDevices" \
+    Server.Map="$Map" \
+    Server.Ban="$Ban" \
+    Server.RequireAuthentication="$RequireAuthentication" \
+    Server.ProfileIDBlacklist="$ProfileIDBlacklist" \
+    Server.ProfileIDWhitelist="$ProfileIDWhitelist" \
+    Server.EnableSingleplayer="$EnableSingleplayer" \
+    Server.QueryMapRepository="$QueryMapRepository" \
+    Server.EnableSyncReports="$EnableSyncReports" \
+    Server.TimestampFormat="$TimestampFormat" \
+    Server.EnableGeoIP="$EnableGeoIP" \
+    Server.ShareAnonymizedIPs="$ShareAnonymizedIPs" \
+    Engine.SupportDir="$SupportDir"
+#    Server.GeoIPDatabase="$GeoIPDatabase" \
 done
