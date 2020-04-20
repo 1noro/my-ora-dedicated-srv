@@ -35,6 +35,9 @@ ShareAnonymizedIPs="${ShareAnonymizedIPs:-"True"}"
 
 #SupportDir="${SupportDir:-""}" # Different directory to store server logs.
 
+mkdir -p "$HOME"/.openra
+echo "Con una evaluacion cuidadosa, uno puede vencer; sin ella, no puede" > "$HOME"/.openra/motd.txt
+
 while true; do
 #     mono --debug ./OpenRA-Red-Alert-x86_64.AppImage --server Game.Mod="$Mod" \
 #     ./OpenRA-Red-Alert-x86_64.AppImage --server Game.Mod="$Mod" \
